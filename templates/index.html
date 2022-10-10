@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background: #555;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: xx-large;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            padding-top: 1em;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: {{ img_size }}%;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Flask Docker</title>
+</head>
+
+<body>
+    <h2 class="center">
+        "{{ the_joke }}"
+    </h2>
+    <img src="{{ the_img }}">
+</body>
+
+</html>
